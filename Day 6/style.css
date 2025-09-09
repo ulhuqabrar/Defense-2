@@ -1,0 +1,28 @@
+#heading{
+    background-color: rgb(228, 121, 13);
+    font-family: "Epunda Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+#h2{
+    font-family: "Epunda Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2em;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+.form{
+    background-color: bisque;
+    font-family: "Epunda Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.table{
+    text-align: center;
+}
