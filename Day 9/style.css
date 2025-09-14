@@ -1,0 +1,104 @@
+.text{
+    color: #ffffff;
+    font-family:'Calibri';
+}
+
+#heading {
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    position: relative;
+}
+
+.navigations{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#country {
+    background-color: rgb(151, 139, 116);
+    text-align: center;
+    font-family: 'Calibri';
+}
+
+.jflag {
+    background-color: white;
+    height: 250px;
+    width: 400px;
+    position: relative;
+}
+
+.jflagcircle {
+    background-color: red;
+    height: 150px;
+    width: 150px; 
+    border-radius: 50%;
+    position: absolute; 
+    top: 50px;
+    right: 125px;
+}
+
+#sflag {
+    background-color: #fecc02;
+    height: 250px; 
+    width: 400px;
+    position: relative;
+}
+
+.box {
+    box-sizing: border-box;
+    background-color: rgb(35, 35, 197);
+}
+
+.first, .third {
+    height: 95px;
+    width: 95px;
+}
+
+.third {
+    position: absolute;
+    bottom: 0px;
+}
+
+.second, .fourth {
+    height: 95px;
+    width: 250px;
+    position: absolute;
+}
+
+.second{
+    top: 0px;
+    right: 0px;
+}
+
+.fourth {
+    bottom: 0px;
+    right: 0px;
+}
+
+#lflag {
+    background-color: #CE1126;
+    height: 250px; 
+    width: 400px;
+    position: relative;
+}
+
+
+.lbox {
+    box-sizing: border-box;
+    background-color: #002868;
+    height: 100px;
+    width: 400px;
+    position: absolute;
+    top: 80px;
+}
+
+.lsecond {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 130px;
+    z-index: 10;
+}
