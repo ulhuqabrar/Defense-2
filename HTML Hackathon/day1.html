@@ -17,26 +17,26 @@
                 <a href="./day1.html">Day 1: What is Internet</a>
             </li>
             <li>
-                <a href="./day2.html">Day 2: What is Internet</a>
+                <a href="./day2.html">Day 2: HTML, Tags and Attributes</a>
             </li>
             <li>
-                <a href="./day3.html">Day 3: What is Internet</a>
+                <a href="./day3.html">Day 3: Nested List & Tables in HTML</a>
             </li>
             <li>
-                <a href="./day4.html">Day 4: What is Internet</a>
+                <a href="./day4.html">Day 4: File Path, Boiler Plate Code, Div, class, id, header</a>
             </li>
             <li>
-                <a href="./day5.html">Day 5: What is Internet</a>
+                <a href="./day5.html">Day 5: Forms</a>
             </li>
             <li>
-                <a href="./day6.html">Day 6: What is Internet</a>
+                <a href="./day6.html">Day 6: Media Tags | Multi Page Website</a>
             </li>
             <li>
                 <a href="./about.html">About</a>
             </li>
         </ul>
-    </div>
-    <h2>What is Internet</h2>
+    </div><hr>
+    <h2 style="text-align: center;">Day 1: What is Internet</h2>
     <h3>Topics Covered:</h3>
         <ol>
             <li>Internet</li>
@@ -46,9 +46,11 @@
             <li>Port No.</li>
             <li>LAN</li>
             <li>Router</li>
-    </ol>
+    </ol><hr><br>
+    <iframe src="https://youtube.com/embed/1pcikNlDB-4?si=wIbicIfc9iJM-aLe" frameborder="0"></iframe><br><br>
     </header>
     <main>
+        <hr>
         <ol>
             <li>
                 <h3>What is Internet</h3>
@@ -74,16 +76,133 @@
                     <li>
                         Dynamic (changes) vs Permanent (MAC address)
                     </li>
-                    <li>
-                        IPv4 is 32-bit, range: 0.0.0.0 – 255.255.255.255 (~4.3 billion addresses).
-                    </li>
-                </ul>
+                    <table border="1">
+                        <tr>
+                            <th>IPv4: is 32-bit</th>
+                            <th>IPv6 : 128 bit number</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                range: 0.0.0.0 – 255.255.255.255
+                            </td>
+                            <td>
+                                Range → 0.0.0.0 – 255.255.255.255
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                (~4.3 billion addresses)
+                            </td>
+                            <td>
+                                2¹²⁸ IP addresses
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Can allocate 2³² / 4.3 billion addresses / systems.</td>
+                            <td>
+                                (340 – undecillion)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Written in hexadecimal form</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Format → 8bit | 8bit | 8bit | 8bit
+                            </td>
+                            <td>
+                                xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx <br>
+                                0000:0000:0000:0000:0000:0000:0000:0000
+                            </td>
+                        </tr>
+                    </table>
+            <li>
+                <h3>MAC Address</h3>
+                <p>Permanent, used in Medium Access Control.</p>
+                <p>48 bit with 12 hexadecimal digits</p>
+                <p>in four format :-</p>
+                <ol>
+                    <li>Colon separated (common)</li>
+                    <li>Hyphen separated (windows)</li>
+                    <li>Period separated (cisco & others)</li>
+                    <li>No separation (least common)</li>
+                </ol>
+                <p>A device can have multiple Mac address</p>
+                <p>Mac – Sends / receives data</p>
             </li>
-            
+            <li><h3>System</h3>
+                <ol>
+                    <li>
+                        You type a website name (like google.com).
+                    </li>
+                    <li>Request Server (DNS Resolver): Your system sends the query to its configured DNS resolver (usually your ISP’s recursive server).</li>
+                    <li>Root Server: If the resolver doesn’t have the answer cached, it asks a Root DNS server.</li>
+                    <li>TLD Server: The Root server directs the resolver to the Top Level Domain (TLD) server (like .com, .in).</li>
+                    <li>Authoritative Server: The TLD server points to the authoritative server for the domain (e.g., google’s authoritative nameserver).</li>
+                    <li>Response Back: The authoritative server returns the IP address of the requested website.</li>
+                    <li>System: The resolver gives the IP back to your system, which can now contact the website directly</li>
+                </ol>
+                <br>
+                <img src="./Notes/Day 1/1.1.jpeg" alt="" height="250px">
+            </li><br><br>
+            <li>When that TLD server takes back to the Authoritative Server which gives DNS (IP address) of the website which fetches back & is stored in the system’s recursive server.</li>
+            <br><br><img src="./Notes/Day 1/1.2.jpeg" alt="day1 notes" height="250px">
+            <li><h3>Port No.:</h3>
+            <p>Part of system that requests certain data from internet or sends.</p>
+            <ul>
+                <li>http → 80</li>
+                <li>https → 443 (Secure, others can’t read)</li>
+            </ul>
+            <p>16 bit binary digit</p>
+            <p>No. of possible ports = 0 to 65,536 (2¹⁶)</p>
+            <p>No. of Identifiers : (0–65,536)²¹⁶ – 1</p>
+            <p>0 – 1023 → Port No. are reserved.</p>
+            <p>1024 – 49151 → Registered ports (reserved)</p>
+            <p>49152 – 65535 → Dynamic</p>
+            </li><br>
+            <li>System checks for DNS server in itself first. If not found checks in recursive server.</li>
+            <ul>
+                <li>Recursive also checks in itself first, if not found.</li>
+                <li>First goes to root server to find end domain (.com, .in) & gives to appropriate TLD server address.</li>
+            </ul>
+            <li>
+                
+            </li>
+            <li>
+                <h3>LAN</h3>
+                <p>Multiple systems share data via connected switch. (Scalable traffic)</p>
+                <img src="./Notes/Day 1/2.1.jpeg" alt="" height="250px">
+                <p>Router connects LANs. They are connected to switches and another routers</p>
+                <img src="./Notes/Day 1/2.2.jpeg" alt="" height="250px">
+            </li>
+            <li>
+                <h3>Types Of IP Addresses and when they are used</h3>
+                <h4>Public IP Address</h4>                    
+                <p>Private IP addresses are unique in local</p>
+                <h4>Private IP Address</h4>
+                <ol>
+                    <li>10.0.0.0 – 10.255.255.255 (Usually big companies)</li>
+                    <li>172.16.0.0 – 172.31.255.255 (Usually medium companies)</li>
+                    <li>192.168.0.0 – 192.168.255.255 (Usually small companies & local ISP)</li>
+                    <li>Router IP address (Divided network)</li>
+
+                    <li>Public IP addresses are unique in global</li>
+                </ol>
+            </li>
+            <li>
+                <h3>Router</h3>
+                <img src="./Notes/Day 1/3.jpeg" alt="" height="250px">
+            </li>
         </ol>
         <a href="https://www.notion.so/Web-Development-Course-25b3a78e0e2280919c1ed15f0878fa15">Bhaiyya Ke Notes</a>
         <br><br>
-        <a href="https://www.notion.so/Web-Development-Course-25b3a78e0e2280919c1ed15f0878fa15">Mere Notes</a>
+        <a href="https://github.com/ulhuqabrar/Defense-2/tree/main/Notes/Day%201">Mere Notes</a>
+        <br><br>
+        <hr> <br><img src="./Notes/Day 1/1.jpeg" alt="" height="400px">
+        <img src="./Notes/Day 1/2.jpeg" alt="" height="400px">
+        <img src="./Notes/Day 1/3.jpeg" alt="" height="390px"><br>
+        <br><br><hr>
     </main>
     <footer>
         <p><a href="https://github.com/coderarmy-notes">Bhaiyya's Github Link</a></p>
