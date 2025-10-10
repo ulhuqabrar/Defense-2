@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIKE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- Navy Radar Loader -->
+    <div class="system-access">
+        <div class="radar-container">
+            <div class="radar-screen">
+                <div class="radar-rings">
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                    <div class="ring"></div>
+                </div>
+                <div class="radar-sweep"></div>
+                <div class="radar-grid">
+                    <div class="grid-line horizontal"></div>
+                    <div class="grid-line vertical"></div>
+                </div>
+                <div class="radar-blip blip-1">
+                    <span class="blip-dot"></span>
+                    <span class="blip-ring"></span>
+                </div>
+                <div class="radar-blip blip-2">
+                    <span class="blip-dot"></span>
+                    <span class="blip-ring"></span>
+                </div>
+                <div class="radar-blip blip-3">
+                    <span class="blip-dot"></span>
+                    <span class="blip-ring"></span>
+                </div>
+                <div class="radar-center"></div>
+            </div>
+        </div>
+        <p class="access-text">LOADING<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="element" style="--x:5%; --y:15%; --w:35px; --h:20px; --z:-150px; --delay:0s;"></div>
+            <div class="element" style="--x:12%; --y:30%; --w:20px; --h:15px; --z:-200px; --delay:0.2s;"></div>
+            <div class="element" style="--x:8%; --y:70%; --w:40px; --h:25px; --z:-100px; --delay:0.4s;"></div>
+            <div class="element" style="--x:15%; --y:85%; --w:25px; --h:25px; --z:-250px; --delay:0.6s;"></div>
+            <div class="element" style="--x:25%; --y:20%; --w:15px; --h:15px; --z:-180px; --delay:0.8s;"></div>
+            <div class="element" style="--x:30%; --y:40%; --w:10px; --h:10px; --z:-120px; --delay:1s;"></div>
+            <div class="element" style="--x:35%; --y:55%; --w:12px; --h:12px; --z:-80px; --delay:1.2s;"></div>
+            <div class="element" style="--x:40%; --y:60%; --w:8px; --h:8px; --z:-60px; --delay:1.4s;"></div>
+            <div class="element" style="--x:45%; --y:50%; --w:10px; --h:10px; --z:-50px; --delay:1.6s;"></div>
+            <div class="element" style="--x:50%; --y:45%; --w:12px; --h:12px; --z:-40px; --delay:1.8s;"></div>
+            <div class="element" style="--x:52%; --y:55%; --w:8px; --h:8px; --z:-70px; --delay:2s;"></div>
+            <div class="element" style="--x:55%; --y:65%; --w:10px; --h:12px; --z:-100px; --delay:2.2s;"></div>
+            <div class="element" style="--x:58%; --y:70%; --w:15px; --h:10px; --z:-130px; --delay:2.4s;"></div>
+            <div class="element" style="--x:60%; --y:80%; --w:18px; --h:15px; --z:-160px; --delay:2.6s;"></div>
+            <div class="element" style="--x:65%; --y:20%; --w:20px; --h:25px; --z:-200px; --delay:2.8s;"></div>
+            <div class="element" style="--x:68%; --y:35%; --w:25px; --h:20px; --z:-220px; --delay:3s;"></div>
+            <div class="element" style="--x:70%; --y:45%; --w:10px; --h:12px; --z:-90px; --delay:3.2s;"></div>
+            <div class="element" style="--x:73%; --y:60%; --w:30px; --h:20px; --z:-300px; --delay:3.4s;"></div>
+            <div class="element" style="--x:75%; --y:75%; --w:15px; --h:10px; --z:-110px; --delay:3.6s;"></div>
+            <div class="element" style="--x:78%; --y:25%; --w:40px; --h:30px; --z:-350px; --delay:3.8s;"></div>
+            <div class="element" style="--x:80%; --y:50%; --w:12px; --h:12px; --z:-180px; --delay:4s;"></div>
+            <div class="element" style="--x:83%; --y:65%; --w:35px; --h:25px; --z:-200px; --delay:4.2s;"></div>
+            <div class="element" style="--x:85%; --y:40%; --w:45px; --h:30px; --z:-320px; --delay:4.4s;"></div>
+            <div class="element" style="--x:88%; --y:80%; --w:20px; --h:15px; --z:-250px; --delay:4.6s;"></div>
+            <div class="element" style="--x:90%; --y:10%; --w:60px; --h:35px; --z:-400px; --delay:4.8s;"></div>
+            <div class="element" style="--x:92%; --y:55%; --w:25px; --h:25px; --z:-170px; --delay:5s;"></div>
+            <div class="element" style="--x:20%; --y:50%; --w:30px; --h:20px; --z:-100px; --delay:5.2s;"></div>
+            <div class="element" style="--x:22%; --y:65%; --w:25px; --h:25px; --z:-180px; --delay:5.4s;"></div>
+            <div class="element" style="--x:40%; --y:80%; --w:10px; --h:10px; --z:-60px; --delay:5.6s;"></div>
+            <div class="element" style="--x:50%; --y:30%; --w:15px; --h:12px; --z:-120px; --delay:5.8s;"></div>
+            <div class="element" style="--x:55%; --y:20%; --w:35px; --h:25px; --z:-300px; --delay:6s;"></div>
+            <div class="element" style="--x:60%; --y:40%; --w:45px; --h:30px; --z:-350px; --delay:6.2s;"></div>
+            <div class="element" style="--x:10%; --y:45%; --w:20px; --h:15px; --z:-250px; --delay:6.4s;"></div>
+            <div class="element" style="--x:30%; --y:75%; --w:25px; --h:20px; --z:-180px; --delay:6.6s;"></div>
+            <div class="element" style="--x:85%; --y:90%; --w:30px; --h:25px; --z:-300px; --delay:6.8s;"></div>
+            <div class="element" style="--x:48%; --y:52%; --w:12px; --h:12px; --z:-50px; --delay:7s;"></div>
+        </div>
+
+
+        <div class="hero-content">
+            <h1 class="strike-logo">STRIKE</h1>
+            <p class="tagline">EXECUTE THE IMPOSSIBLE</p>
+            <a href="#extraction" class="cta-button">ENLIST NOW</a>
+            
+        <p class="mobile-inst">Watch on mobile for better experience</p>
+        </div>
+    </section>
+
+
+    <!-- Nav Bar -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <h2 class="strike-mini"><a href="#hero">STRIKE</a></h2>    
+            <div class="nav-links">
+                <div class="page-links"><a href="#mission" class="page-links">Mission</a></div>
+                <div class="page-links"><a href="#modules" class="page-links">Modules</a></div>
+                <div class="page-links"><a href="#commanders" class="page-links">Commanders</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- System Core - Infinite Scrolling Tape -->
+    <section class="system-core-tape">
+        <div class="tape-track">
+            <div class="tape-content">
+                <div class="stat-item">
+                    <span class="stat-number">1200+</span>
+                    <span class="stat-label">TRAINED</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">SUCCESS RATE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">WEEKS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">SUPPORT</span>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="stat-item">
+                    <span class="stat-number">1200+</span>
+                    <span class="stat-label">TRAINED</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">SUCCESS RATE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">WEEKS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">SUPPORT</span>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="stat-item">
+                    <span class="stat-number">1200+</span>
+                    <span class="stat-label">TRAINED</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">SUCCESS RATE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">WEEKS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">SUPPORT</span>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="stat-item">
+                    <span class="stat-number">1200+</span>
+                    <span class="stat-label">TRAINED</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">SUCCESS RATE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">WEEKS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">SUPPORT</span>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="stat-item">
+                    <span class="stat-number">1200+</span>
+                    <span class="stat-label">TRAINED</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">SUCCESS RATE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">WEEKS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">SUPPORT</span>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Objectives -->
+    <section class="objectives" id="mission">
+        <h2 class="section-title mission-title"><div class="fname">MISSION</div> OBJECTIVES</h2>
+        <div class="banner">
+                <div class="item" style="--position:1; --quantity:6;">
+                    <div class="objective-card">
+                        <img src="./assets/Objectives/MASTER THE ALGORITHMS.jpeg" alt="">
+                        <span class="objective-number">01</span>
+                        <h3 class="objective-title">MASTER THE ALGORITHMS</h3>
+                        <p class="objective-desc">Build unbreakable problem-solving foundations through tactical DSA training.</p>
+                    </div>
+                </div>
+                <div class="item" style="--position:2; --quantity:6;">
+                    <div class="objective-card">
+                        <img src="./assets/Objectives/TECH COMMANDER.jpeg" alt="">
+                        <span class="objective-number">06</span>
+                        <h3 class="objective-title">TECH COMMANDER</h3>
+                        <p class="objective-desc">Lead projects, teams, and systems with precision, strategy, and innovation.</p>
+                    </div>
+                </div>
+                <div class="item" style="--position:3; --quantity:6;">
+                    <div class="objective-card">
+                        <img src="./assets/Objectives/INTELLIGENT SYSTEMS.jpeg" alt="">
+                        <span class="objective-number">05</span>
+                        <h3 class="objective-title">BUILD INTELLIGENT SYSTEMS</h3>
+                        <p class="objective-desc">Design, train, and deploy AI-driven architectures that adapt and evolve.</p>
+                    </div>
+                </div>
+                <div class="item" style="--position:4; --quantity:6;">
+                    <div class="objective-card">
+                        <img src="./assets/Objectives/MISSION SUCCESS.jpeg" alt="">
+                       <span class="objective-number">04</span>
+                        <h3 class="objective-title">MISSION SUCCESS</h3>
+                        <p class="objective-desc">Achieve elite status in technical interviews.</p>
+                    </div>
+                </div>
+                <div class="item" style="--position:5; --quantity:6;">
+                    <div class="objective-card">
+                        <img src="./assets/Objectives/TACTICAL ADVANTAGE.jpeg" alt="">
+                       <span class="objective-number">03</span>
+                        <h3 class="objective-title">TACTICAL ADVANTAGE</h3>
+                        <p class="objective-desc">Gain the competitive edge in tech.</p>
+                    </div>
+                </div>
+                <div class="item" style="--position:6; --quantity:6;">
+                    <div class="objective-card">
+                        <img src="./assets/Objectives/DEPLOY AI SYSTEMS.jpeg" alt="">
+                        <span class="objective-number">02</span>
+                        <h3 class="objective-title">DEPLOY AI SYSTEMS</h3>
+                        <p class="objective-desc">Command generative AI through hands-on implementation.</p>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Modules -->
+    <section class="modules" id="modules">
+        <h2 class="section-title"><div class="fname">OPERATION</div> MODULES</h2>
+        <div class="modules-container">
+            <div class="module-card dsa">
+                <div class="module-icon">
+                    <img src="./assets/Modules/dsa.png" width="30%" alt="">
+                </div>
+                <div class="module-text">
+                    <h3 class="module-name">DSA OPS</h3>
+                    <p class="module-desc">Structured warfare through data structures and algorithms.</p>
+                </div>
+                <ul class="module-features dsacard">
+                    <li><h4 style="color: rgb(224, 224, 224);">Includes :</h4></li><br>
+                    <li>Array & String Manipulation</li>
+                    <li>Linked Lists & Trees</li>
+                    <li>Dynamic Programming</li>
+                    <li>Graph Algorithms</li>
+                    <li>System Design Patterns</li>
+                </ul>
+            </div>
+            <div class="module-card genai">
+                <div class="module-icon">
+                    <img src="./assets/Modules/gen ai.jpg" width="30%" alt="">
+                </div>
+                <div class="module-text">
+                    <h3 class="module-name">GENAI OPS</h3>
+                    <p class="module-desc">Deploy your intelligent systems using transformer models.</p>
+                </div>
+                <ul class="module-features genaicard">
+                    <li><h4 style="color: rgb(224, 224, 224);">Includes :</h4></li><br>
+                    <li>Transformer Architecture</li>
+                    <li>Prompt Engineering</li>
+                    <li>Fine-tuning LLMs</li>
+                    <li>Vector Databases</li>
+                    <li>AI Agent Development</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Squad -->
+    <section class="squad" id="commanders">
+        <h2 class="section-title"><div class="fname">YOUR</div> COMMANDERS</h2>
+        <div class="squad-grid">
+            <div class="squad-card squad-rohit">
+                <h3 class="squad-name">CAPT. Rohit Negi</h3>
+                <img class="squad-img" src="./assets/Squad/Rohit nrgi.jpg" alt=""><br><br>
+                <span class="squad-role">DSA OPERATIONS LEAD</span><br><br>
+                <p class="squad-bio">IIT Guwahati | 2Cr+ Package in Uber | On a mission to make Indian Community of compititive coders</p>
+                <div class="Logos">
+                    <a href="https://www.youtube.com/@Rohit_Negi" target="_blank"><img src="./assets/Logos/youtube.webp" alt="youtube-logo.png" width="25px" srcset=""></a>
+                    <a href="https://in.linkedin.com/in/rohit-negi9" target="_blank"><img src="./assets/Logos/LinkedIn.webp" width="20px" alt=""></a>
+                    <a href="https://x.com/rohit_negi9?lang=en" target="_blank"><img src="./assets/Logos/X_logo.jpg" width="20px" alt=""></a>
+                    <a href="https://www.instagram.com/rohit_negi9/" target="_blank"><img src="./assets/Logos/instagram-logo_971166-164497.jpg" width="20px" alt=""></a>
+                </div>
+            </div>
+            <div class="squad-card">
+                <h3 class="squad-name">CMD. Adity Tandon</h3>
+                <img class="squad-img" src="./assets/Squad/Aditya Tandon.jpg" alt=""><br><br>
+                <span class="squad-role">GENAI SPECIALIST</span><br><br>
+                <p class="squad-bio">IIT Guwahati | AI research veteran | Ex-Ola | System Design Advanced Level Architect</p>
+                <div class="Logos">
+                    <a href="https://www.youtube.com/@CoderArmy9"><img src="./assets/Logos/youtube.webp" alt="youtube-logo.png" width="25px" srcset=""></a>
+                    <a href="https://in.linkedin.com/in/adityatandon2" target="_blank"><img src="./assets/Logos/LinkedIn.webp" width="20px" alt=""></a>
+                    <a href="https://x.com/adityatandon02" target="_blank"><img src="./assets/Logos/X_logo.jpg" width="20px" alt=""></a>
+                    <a href="https://www.instagram.com/adityatandon2/?__d=1%2F" target="_blank"><img src="./assets/Logos/instagram-logo_971166-164497.jpg" width="20px" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+<section class="extraction" id="extraction">
+  <div class="extraction-box">
+    <h2 class="last-section-title">
+      <div class="fname">JOIN</div> STRIKE
+    </h2>
+
+    <form class="extraction-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="status">Student or Working Professional</label>
+      <select id="status" required>
+        <option value="">Select</option>
+        <option value="student">Student</option>
+        <option value="working">Working Professional</option>
+      </select>
+
+      <label for="email">Email ID</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+
+      <div class="price-tag">
+        <span>Price:</span>
+        <strong>₹2800/-</strong>
+      </div>
+
+      <button type="submit" class="enroll-btn">ENROLL NOW</button>
+    </form>
+  </div>
+</section>
+
+    
+
+    <!-- Footer -->
+     <section>
+        <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-brand">
+                    <h2 class="footer-logo">STRIKE</h2>
+                    <p class="footer-tagline">Execute the impossible</p>
+                </div>
+
+                    <div class="footer-links">
+                        <div class="footer-column">
+                            <h4>Navigation</h4>
+                            <a href="#mission">Mission</a>
+                            <a href="#modules">Modules</a>
+                            <a href="#commanders">Commanders</a>
+                            <a href="#hero">Top</a>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Legal</h4>
+                            Privacy Policy i 
+                            Terms of Use
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 CODER ARMY — All Rights Reserved.</p>
+            </div>
+        </footer>
+     </section>
+
+</body>
+</html>
